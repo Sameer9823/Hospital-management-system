@@ -7,7 +7,7 @@
 
     <% if (data.NODE_ENV == 'production') { %>
       <!-- Production Stylesheets -->
-      <link rel="stylesheet" href="assets/production/css/home.min.css">
+      <!-- <link rel="stylesheet" href="assets/production/css/home.min.css"> -->
 
     <% }else { %>
       <!-- Development Stylesheets -->
@@ -33,69 +33,29 @@
     <%- include('partial/header.ejs', {data: data }); %>
 
     <!--About Start-->
-    <div class="about-area pt_60 pb_90">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mt_30">
-            <div class="about-content">
-              <div class="headline-left">
-                <h2>
-                  <span>QUALITY MEDICAL SERVICES</span> MAKE OUR PATIENTS HAPPY
-                </h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine
-                propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes
-                ne.<br>
-              </p>
-              <div class="progress-gallery main-prog">
-                <div class="bar-container">
-                  <p>Neurology</p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar"
-                      aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                    </div>
-                  </div>
-                  <div class="percentage-show">95%</div>
-                </div>
-                <div class="bar-container">
-                  <p>Dentistry</p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar"
-                      aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                    </div>
-                  </div>
-                  <div class="percentage-show">80%</div>
-                </div>
-                <div class="bar-container">
-                  <p>Radiology</p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar"
-                      aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%">
-                    </div>
-                  </div>
-                  <div class="percentage-show">88%</div>
-                </div>
-                <div class="bar-container">
-                  <p>Cardiology</p>
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-success progress-bar-custom" role="progressbar"
-                      aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
-                    </div>
-                  </div>
-                  <div class="percentage-show">82%</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="m-auto">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-Fdo_HT3X80"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
+    <div style="padding-inline: 4rem;" class="container-fluid bg-light vh-100 d-flex align-items-center justify-content-center ">
+      <div class="row flex-column-reverse flex-lg-row align-items-center">
+        <div class="col-12 col-lg-6 text-center text-lg-left">
+          <h1 class="display-4 fw-bold">About Us</h1>
+          <p class="py-3">
+            At [Clinic Name], our mission is to provide compassionate, comprehensive pediatric care that promotes the health and well-being of your children. Our dedicated team of experienced pediatricians works closely with families to offer personalized care that meets the needs of every child at every stage of development.
+          </p>
+          <p class="py-3">
+            We believe in fostering a warm and welcoming environment where parents and children feel safe, supported, and informed. Whether it’s for routine check-ups, vaccinations, or addressing health concerns, we’re here to guide you every step of the way.
+          </p>
+          <button class="btn btn-primary btn-lg">Learn More</button>
+        </div>
+        <div class="col-12 col-lg-6 text-center">
+          <img
+            src="https://wallpaperaccess.com/full/3099146.jpg"
+            class="img-fluid rounded shadow-lg" alt="Pediatrician with Child" />
         </div>
       </div>
     </div>
+    
+    
+    <!-- Bootstrap CSS CDN -->
+    
     <!--About End-->
 
     <!--Choose-Area Start-->
@@ -103,165 +63,584 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="headline">
+            <div class="headline pt-5 text-center">
               <h2>WHY CHOOSE US</h2>
-              <h3>We have some special crieteria that will help you</h3>
+              <h3>We have some special criteria that will help you</h3>
             </div>
           </div>
         </div>
+        
         <div class="row">
+          <!-- Quick Response Card -->
           <div class="col-lg-4">
-            <div class="choose-item flex" style="background-image: url(assets/images/cloak.JPEG)">
-              <div class="choose-icon">
-                <i class="fas fa-clock fa-3x" aria-hidden="true"></i>
-              </div>
-              <div class="choose-text">
-                <h4>QUICK RESPONSE</h4>
-                <p>
-                  Iisque persius ne sit, simul zril vix eu. Qui ne iusto epicuri suscipiantur, sit ne probo adhuc.
-                  Liber
-                  verterem interpretaris nam et, ea pro solum expetendis. 
-                </p>
+            <div class="card text-dark card-has-bg click-col" style="background-image:url('assets/images/cloak.JPEG');">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="choose-icon">
+                  <i class="fas fa-clock fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title mt-0">QUICK RESPONSE</h4>
+                  <p>
+                    Time is critical, and we understand the importance of a fast response. Our team is always ready to address your queries and provide solutions in record time, minimizing downtime and ensuring a smooth and seamless experience.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+    
+          <!-- 100% Satisfaction Card -->
           <div class="col-lg-4">
-            <div class="choose-item flex" style="background-image: url(assets/images/satisfication.JPEG)">
-              <div class="choose-icon">
-                <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
-              </div>
-              <div class="choose-text">
-                <h4>100% SATISFACTION</h4>
-                <p>
-                  Duo luptatum delicata evertitur ad. Usu te quaerendum definitiones, ne mundi volutpat duo, in
-                  dissentias temporibus pri. Duo ferri dicant definitionem te. 
-                </p>
+            <div class="card text-dark card-has-bg click-col" style="background-image:url('assets/images/satisfication.JPEG');">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="choose-icon">
+                  <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title mt-0">100% SATISFACTION</h4>
+                  <p>
+                    Our top priority is ensuring complete customer satisfaction. We are committed to delivering exceptional service and solutions that meet your needs, ensuring that every experience with us exceeds your expectations.</p>
+                </div>
               </div>
             </div>
           </div>
+    
+          <!-- Quality Service Card -->
           <div class="col-lg-4">
-            <div class="choose-item flex" style="background-image: url(assets/images/qualityservice.JPEG)">
-              <div class="choose-icon">
-                <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
-              </div>
-              <div class="choose-text">
-                <h4>QUALITY SERVICE</h4>
-                <p>
-                  Amet dolor oratio ex has, stet repudiare definiebas vim ne. Id probo facilisis usu, pri aliquam
-                  omnesque cu. Vide assentior id qui, quando possim eos. 
-                </p>
+            <div class="card text-dark card-has-bg click-col" style="background-image:url('assets/images/qualityservice.JPEG');">
+              <div class="card-img-overlay d-flex flex-column">
+                <div class="choose-icon">
+                  <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title mt-0">QUALITY SERVICE</h4>
+                  <p>
+                    We believe in delivering nothing less than the best. Our quality-driven approach ensures that every service we provide is of the highest standard.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
     <!--Choose-Area End-->
+<style>
+  /* Global Styles */
 
 
-    <!--Feature-Area Start-->
-    <div class="feature-area feature-two bg-area pt_90 pb_90">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="headline">
-              <h2>SPECIAL FEATURES</h2>
-              <h3>We offer some awesome features that will help you</h3>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <br>
-                <i class="fas fa-hospital-alt fa-3x" aria-hidden="true"></i>
+
+.lead {
+  color: #aaa;
+}
+
+.wrapper {
+  margin: 10vh 0;
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  min-height: 450px;
+  overflow: hidden;
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+    min-height: 300px;
+  }
+}
+
+/* Background & Hover Effect */
+.card-has-bg {
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.card-has-bg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  filter: grayscale(100%);
+}
+
+.card-has-bg:hover {
+  transform: scale(0.98);
+  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+  background-size: 130%;
+}
+
+.card-has-bg:hover .card-img-overlay {
+  background: linear-gradient(0deg, rgba(255, 186, 33, 0.5) 0%, #21fbff 100%);
+}
+
+.card-img-overlay {
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(0deg, rgba(255, 186, 33, 0.38) 0%, #21fbff 100%);
+}
+
+/* Card Body */
+.card-body {
+  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-has-bg:hover .card-body {
+  margin-top: 30px;
+}
+
+.card-title {
+  font-weight: 800;
+}
+
+.card-meta {
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Footer */
+.card-footer {
+  background: none;
+  border-top: none;
+}
+
+.media img {
+  border: solid 3px rgba(255, 255, 255, 0.3);
+}
+
+
+</style>
+
+<style>
+  .section_our_solution .row {
+    align-items: center;
+  }
+
+  .our_solution_category {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .solution_cards_box .solution_card {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2), 0 5px 15px 0 rgba(37, 44, 97, 0.15);
+  border-radius: 15px;
+  margin: 8px;
+  padding: 10px 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  min-height: 300px; /* Keep the height unchanged */
+  width: 100%; /* Make sure it's responsive */
+  max-width: 500px; /* Increased width */
+  transition: 0.7s;
+}
+
+  .solution_cards_box .solution_card:hover {
+    background: #309df0;
+    color: #fff;
+    transform: scale(1.1);
+    z-index: 9;
+  }
+
+  .solution_cards_box .solution_card:hover::before {
+    background: rgb(85 108 214 / 10%);
+  }
+
+  .solution_cards_box .solution_card:hover .solu_title h3,
+  .solution_cards_box .solution_card:hover .solu_description p {
+    color: #fff;
+  }
+
+  .solution_cards_box .solution_card:before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    width: 170px;
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+  }
+
+  .solution_cards_box .solution_card:hover .solu_description button {
+    background: #fff !important;
+    color: #309df0;
+  }
+
+  .solution_card .so_top_icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .solution_card .so_top_icon img {
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .solution_card .solu_title h3 {
+    color: #212121;
+    font-size: 1.3rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+  }
+
+  .solution_card .solu_description p {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .solution_card .solu_description button {
+    border: 0;
+    border-radius: 15px;
+    background: linear-gradient(140deg, #42c3ca 0%, #42c3ca 50%, #42c3cac7 75%) !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 16px;
+  }
+
+  .our_solution_content h1 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+
+  .hover_color_bubble {
+    position: absolute;
+    background: rgb(54 81 207 / 15%);
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    transform: rotate(-36deg);
+    left: -18rem;
+    transition: 0.7s;
+  }
+
+  .solution_cards_box .solution_card:hover .hover_color_bubble {
+    top: 0rem;
+  }
+
+  /*start media query*/
+  @media screen and (min-width: 320px) {
+    .our_solution_category {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .solution_cards_box .solution_card {
+      flex: auto;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .our_solution_category .solution_cards_box {
+      flex: 1;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .our_solution_category {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+</style>
+
+<div class="headline">
+  <h2>SPECIAL FEATURES</h2>
+  <h3>We offer some awesome features that will help you</h3>
+</div>
+<div class="section_our_solution">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <div class="our_solution_category">
+        <div class="row solution_cards_box">
+          <!-- First row of cards -->
+          <div class="col-lg-4 col-md-4">
+            <div style="padding-top: 1.4rem;" class="solution_card">
+              <div class="hover_color_bubble"></div>
+              <div class="text-center">
+                <i style="font-size: x-large;" class="fas fa-hospital-alt"></i>
               </div>
-              <div class="feature-text">
-                <h4>Planned Space Design</h4>
+              <div class="solu_title">
+                <h3 style="text-align: center;">Planned Space Design</h3>
+              </div>
+              <div class="solu_description">
                 <p>
-                  Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an in dolore. 
+                  It optimizes layouts for functionality and aesthetics, enhancing workflow, comfort, and efficiency in various environments like healthcare, offices, and homes.
                 </p>
+                
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <br>
-                <i class="fas fa-procedures fa-3x" aria-hidden="true"></i>
+
+          <div class="col-lg-4 col-md-4">
+            <div style="padding-top: 1.4rem;" class="solution_card">
+              <div class="hover_color_bubble"></div>
+              <div class="text-center">
+                <i style="font-size: x-large;" class="fas fa-procedures"></i>
               </div>
-              <div class="feature-text">
-                <h4>Good Medical Facilities</h4>
+              <div class="solu_title">
+                <h3 style="text-align: center;">Good Medical Facilities</h3>
+              </div>
+              <div class="solu_description">
                 <p>
-                  Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno.
+                 It provide comprehensive healthcare services, advanced technology, skilled professionals, and a patient-centered approach for optimal outcomes.
                 </p>
+           
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <br>
-                <i class="fas fa-ambulance fa-3x" aria-hidden="true"></i>
+
+          <div class="col-lg-4 col-md-4">
+            <div style="padding-top: 1.4rem;" class="solution_card">
+              <div class="hover_color_bubble"></div>
+              <div class="text-center">
+                <i style="font-size: x-large;" class="fas fa-ambulance"></i>
               </div>
-              <div class="feature-text">
-                <h4>Best Ambulance Service</h4>
+              <div class="solu_title">
+                <h3 style="text-align: center;">Best Ambulance Service</h3>
+              </div>
+              <div class="solu_description">
                 <p>
-                  Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no.
+                 It ensures timely and reliable patient transport, equipped with trained medical staff and advanced equipment, prioritizing safety and comfort during emergencies.
                 </p>
+                
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <br>
-                <i class="fas fa-laptop-medical fa-3x" aria-hidden="true"></i>
+
+          <!-- Second row of cards -->
+          <div class="col-lg-4 col-md-4">
+            <div style="padding-top: 1.4rem;" class="solution_card">
+              <div class="hover_color_bubble"></div>
+              <div class="text-center">
+                <i style="font-size: x-large;" class="fas fa-laptop-medical"></i>
               </div>
-              <div class="feature-text">
-                <h4>Computerized Platform</h4>
+              <div class="solu_title">
+                <h3 style="text-align: center;">Computerized Platform</h3>
+              </div>
+              <div class="solu_description">
                 <p>
-                  Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit. 
+                 It streamlines processes through digital systems, data management, and user interaction across various applications, fostering better communication.
                 </p>
+                
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <br>
-                <i class="fas fa-stethoscope fa-3x" aria-hidden="true"></i>
+
+          <div class="col-lg-4 col-md-4">
+            <div style="padding-top: 1.4rem;" class="solution_card">
+              <div class="hover_color_bubble"></div>
+              <div class="text-center">
+                <i style="font-size: x-large;" class="fas fa-stethoscope"></i>
               </div>
-              <div class="feature-text">
-                <h4>Reduced Supervision</h4>
+              <div class="solu_title">
+                <h3 style="text-align: center;">Reduced Supervision</h3>
+              </div>
+              <div class="solu_description">
                 <p>
-                  Vis constituto complectitur an, modo falli eirmod ea has. Ex vis indoctum scriptorem appellantur.
+                 It promotes autonomy among employees, allowing them to take initiative and make decisions independently, ultimately fostering a more empowered and efficient work environment.
                 </p>
+               
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="feature-item">
-              <div class="feature-icon">
-                <br>
-                <i class="fas fa-robot fa-3x" aria-hidden="true"></i>
+
+          <div class="col-lg-4 col-md-4">
+            <div style="padding-top: 1.4rem;" class="solution_card">
+              <div class="hover_color_bubble"></div>
+              <div class="text-center">
+                <i style="font-size: x-large;" class="fas fa-robot"></i>
               </div>
-              <div class="feature-text">
-                <h4>Modern Technology</h4>
+              <div class="solu_title">
+                <h3 style="text-align: center;">Modern Technology</h3>
+              </div>
+              <div class="solu_description">
                 <p>
-                  Ancillae interpretaris ea has. Id amet impedit qui, eripuit mnesarchum percipitur in eam. 
+                 It enhances efficiency and connectivity, enabling faster communication, improved data management, and innovative solutions across various sectors, driving growth and productivity.
                 </p>
+               
               </div>
             </div>
           </div>
+
+          <!-- Third row of cards -->
+         
+
+          
+
         </div>
       </div>
     </div>
+  </div>
+</div>
     <!--Feature-Area End-->
 
 
     <!--Services Start-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* Start of integrated CSS */
+  
+      .services-area {
+        padding: 90px 0;
+        background-color: #f9f9f9;
+      }
+  
+      .headline {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+  
+      .headline h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333;
+      }
+  
+      .headline h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #666;
+      }
+  
+      .services-item {
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .services-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+  
+      .services-item a {
+        text-decoration: none;
+      }
+  
+      .services-photo {
+        height: 220px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        transition: all 0.4s ease;
+      }
+  
+      .services-photo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+  
+      .services-item:hover .services-photo::before {
+        opacity: 1;
+      }
+  
+      .services-text {
+        padding: 20px;
+        text-align: center;
+      }
+  
+      .services-text h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #212121;
+      }
+  
+      .services-text p {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 15px;
+      }
+  
+      .button-bn a {
+        display: inline-block;
+        font-size: 14px;
+        padding: 10px 20px;
+        color: #fff;
+        background: linear-gradient(45deg, #309df0, #42c3ca);
+        border-radius: 25px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+  
+      .button-bn a:hover {
+        background-color: #fff;
+        color: #309df0;
+        border: 1px solid #309df0;
+      }
+  
+      .services-item:hover .services-photo {
+        filter: brightness(0.7);
+      }
+  
+      @media screen and (min-width: 320px) {
+        .services-item {
+          margin: 0 0 30px 0;
+        }
+      }
+  
+      @media only screen and (min-width: 768px) {
+        .services-item {
+          margin: 0 15px 30px;
+        }
+      }
+  
+      @media only screen and (min-width: 1024px) {
+        .services-area .row {
+          justify-content: center;
+        }
+      }
+  
+    </style>
+  </head>
+  <body>
+  
     <div class="services-area pt_90 pb_90">
       <div class="container">
         <div class="row">
@@ -281,8 +660,7 @@
               <div class="services-text">
                 <h3><a href="#">Newborn Care</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine
-                  propriae quo no unum. 
+                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine propriae quo no unum.
                 </p>
                 <div class="button-bn">
                   <a href="#">Read More <i class="fa fa-chevron-circle-right"></i></a>
@@ -298,8 +676,7 @@
               <div class="services-text">
                 <h3><a href="#">Mother Care</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine
-                  propriae quo no unum. 
+                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine propriae quo no unum.
                 </p>
                 <div class="button-bn">
                   <a href="#">Read More <i class="fa fa-chevron-circle-right"></i></a>
@@ -315,8 +692,7 @@
               <div class="services-text">
                 <h3><a href="#">Critical Treatment</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine
-                  propriae quo no unum. 
+                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine propriae quo no unum.
                 </p>
                 <div class="button-bn">
                   <a href="#">Read More <i class="fa fa-chevron-circle-right"></i></a>
@@ -332,8 +708,7 @@
               <div class="services-text">
                 <h3><a href="#">Modern Laboratory</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine
-                  propriae quo no unum. 
+                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine propriae quo no unum.
                 </p>
                 <div class="button-bn">
                   <a href="#">Read More <i class="fa fa-chevron-circle-right"></i></a>
@@ -342,15 +717,14 @@
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="services-item effect-item">
+            <div class="services-item effect-item ">
               <a href="#" class="image-effect">
                 <div class="services-photo" style="background-image: url(assets/images/test.JPEG)"></div>
               </a>
               <div class="services-text">
                 <h3><a href="#">All Major Tests</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine
-                  propriae quo no unum. 
+                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine propriae quo no unum.
                 </p>
                 <div class="button-bn">
                   <a href="#">Read More <i class="fa fa-chevron-circle-right"></i></a>
@@ -366,8 +740,7 @@
               <div class="services-text">
                 <h3><a href="#">Dental Care</a></h3>
                 <p>
-                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine
-                  propriae quo no unum. 
+                  Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argum entum has. Latine propriae quo no unum.
                 </p>
                 <div class="button-bn">
                   <a href="#">Read More <i class="fa fa-chevron-circle-right"></i></a>
