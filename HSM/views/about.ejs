@@ -29,40 +29,338 @@
     <!--Header-->
     <%- include('partial/header.ejs', {data: data }); %>
     
+<style>
+.container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-    <!--About Start-->
-    <div class="about-page pt_60 pb_30">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Our Mission</h3>
-            <p>Lorem ipsum dolor sit amet, an labores explicari qui, eu nostrum copiosae argumentum has. Latine
-              propriae quo no, unum ridens expetenda id sit, at usu eius eligendi singulis. Sea ocurreret principes
-              ne. At nonumy aperiri pri, nam quodsi copiosae intellegebat et, ex deserunt euripidis usu. Per ad ullum
-              lobortis. Duo volutpat imperdiet ut, postea salutatus imperdiet ut per, ad utinam debitis invenire
-              has.<br></p>
-            <p>Liber utroque vim an, ne his brute vivendo, est fabulas consetetur appellantur an. In dolore legendos
-              quo, ne ferri noluisse sed. Tantas eligendi at ius. Purto ipsum nemore sit ad.<br></p>
-            <p>Vix tale noluisse voluptua ad, ne brute altera democritum cum. Omnes ornatus qui et, te aeterno discere
-              ocurreret sea. Tollit cetero cu usu, etiam evertitur id nec. Id pro unum pertinax oportere, vel ad
-              ridens mollis. Ad ius meis suavitate voluptaria.</p>
-            <br>
-            <h3>Our Vision</h3>
-            <p>Mei ut errem legimus periculis, eos liber epicurei necessitatibus eu, facilisi postulant vel no. Ad mea
-              commune disputando, cu vel choro exerci. Pri et oratio iisque atomorum, enim detracto mei ne, id eos
-              soleat iudicabit. Ne reque reformidans mei, rebum delicata consequuntur an sit. Sea ad audire utamur. Ut
-              mei ridens minimum intellegat, perpetua euripidis te qui, ad consul intellegebat comprehensam eum.</p>
-            <p>Ex vix alienum sadipscing, quod melius philosophia id has. Ad qui quem reprimique, quo possit detracto
-              reprimique no, sint reque officiis ei per. Ea regione commune volutpat pro, fabulas facilis omnesque mei
-              ne. Cu unum detracto comprehensam sea, ad vim ancillae principes, ex usu fugit consulatu. Vis te purto
-              equidem voluptatum.<br></p>
-            <p>Detracto contentiones te est, brute ipsum consul an vis. Mea ei regione blandit ullamcorper, definiebas
-              constituam vix ei. At his ludus nonumes gloriatur. Ne vim tamquam nonumes.<br></p>
-            <br>
-          </div>
+    /* Row for layout */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    /* Column layout */
+    .col {
+      flex: 1;
+      padding: 20px;
+    }
+
+    /* About Section Styles */
+    .about-section {
+      background-color: white;
+      padding: 40px 0;
+      border-radius: 10px;
+      margin: 40px 0;
+    }
+
+    .about-section h2 {
+      color: #007bff;
+      font-size: 2em;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+
+    .about-section p {
+      color: #6c757d;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .about-section ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .about-section ul li {
+      margin-bottom: 10px;
+      color: #007bff;
+      font-weight: bold;
+    }
+
+    /* Specialist Section Styles */
+    .specialist-section {
+      background-color: #e9ecef;
+      padding: 40px 0;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .specialist-section:hover {
+      background-color: #f1f1f1;
+    }
+
+    .specialist-section h2 {
+      color: #007bff;
+      font-size: 2em;
+      transition: color 0.3s ease;
+    }
+
+    .specialist-section h2:hover {
+      color: #0056b3;
+    }
+
+    .specialist-section p {
+      color: #6c757d;
+      font-size: 1.1em;
+    }
+
+    /* Image Styles */
+    .img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Image hover effect */
+    .img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Flexbox layout for the specialist section */
+    .specialist-section .col {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .col {
+        padding: 10px;
+      }
+
+      .specialist-section .col {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .specialist-section .col img {
+        margin-bottom: 20px;
+      }
+    }
+  
+</style>
+    
+ 
+
+  <!-- About Us Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>Who We Are</h2>
+          <p>We are a leading healthcare provider specializing in Pediatrics and Gynecology. With a team of experienced doctors, we are committed to providing the best possible care for women and children.</p>
+          <ul>
+            <li>Compassionate and experienced team</li>
+            <li>State-of-the-art facilities</li>
+            <li>Comprehensive care for all ages</li>
+          </ul>
+        </div>
+        <div class="col">
+          <img src="https://wallpaperaccess.com/full/1917336.jpg" alt="Hospital Image" class="img" width="400" height="300" style="height: 350px;">
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Pediatrics & Gynecology Section -->
+  <section class="specialist-section">
+    <div class="container">
+    
+      <!-- Pediatrics -->
+      <div class="col">
+        <div style="width: 700px; padding-inline: 4rem;">
+          <h2>Pediatrics</h2>
+          <p>Our pediatric department is equipped with the latest technology to ensure that your child receives the best care possible. From routine checkups to specialized treatments, we are here for your child’s health and well-being.</p>
+        </div>
+        <div>
+          <img src="https://wallpaperaccess.com/full/2196721.jpg" class="img" alt="" width="400" height="350">
+        </div>
+      </div>
+      
+      <!-- Gynecology -->
+      <div class="col">
+        <div>
+          <img src="https://wallpaperaccess.com/full/1905092.jpg" alt="" class="img" width="400" height="350">
+        </div>
+        <div style="width: 700px; padding-inline: 4rem;">
+          <h2>Gynecology</h2>
+          <p>Our gynecology department provides comprehensive care for women at every stage of life. Whether you need routine exams or specialized treatments, our experienced gynecologists are here to help.</p>
+        </div>
+      </div>
+
+      <!-- Obstetrics Section -->
+<div class="col">
+  <div style="width: 700px; padding-inline: 4rem;">
+    <h2>Obstetrics</h2>
+    <p>Our obstetrics department provides compassionate and comprehensive care for expectant mothers, ensuring both maternal and fetal well-being. From prenatal care to labor and delivery, our team of specialists is here to support you throughout your journey to motherhood.</p>
+  </div>
+  <div>
+    <img src="https://wallpaperaccess.com/full/10956005.jpg" alt="" class="img" width="400" height="350">
+  </div>
+</div>
+
+<!-- Neonatology Section -->
+<div class="col">
+  <div>
+    <img src="https://th.bing.com/th/id/OIP.OQtpCTZg_jaFuDfNxwOWHgHaE8?w=281&h=188&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" class="img" width="400" height="350">
+  </div>
+  <div style="width: 700px; padding-inline: 4rem;">
+    <h2>Neonatology</h2>
+    <p>Our neonatology department specializes in the care of newborns, especially those born prematurely or with medical conditions. Our highly skilled neonatologists provide advanced treatment and support to ensure the best possible outcomes for your newborn.</p>
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+
+
+    /* Card Container */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    /* Doctor Card Styles */
+    .doctor-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Image of Doctor */
+    .doctor-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Doctor Name */
+    .doctor-card h3 {
+      color: #007bff;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    /* Doctor Specialty */
+    .doctor-card p {
+      color: #6c757d;
+      font-size: 1em;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Doctor Social Links */
+    .doctor-card .social {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .doctor-card .social a {
+      text-decoration: none;
+      font-size: 1.5em;
+      color: #007bff;
+      transition: color 0.3s ease;
+    }
+
+    .doctor-card .social a:hover {
+      color: #0056b3;
+    }
+
+    /* Hover Effect */
+    .doctor-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+      .doctor-card {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+  </style>
+>
+
+  <!-- Doctor Cards Section -->
+  <div class="card-container">
+    <!-- Doctor Card 1 -->
+    <div class="doctor-card">
+      <img src="https://th.bing.com/th?id=OIP.WZuFeD-_Btx-rRmknaI_9AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&cb=13&dpr=1.3&pid=3.1&rm=2" alt="Doctor 1">
+      <h3>Dr. Sarah Johnson</h3>
+      <p>Pediatrics Specialist</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Doctor Card 2 -->
+    <div class="doctor-card">
+      <img src="https://th.bing.com/th/id/OIP.twyfKx4x-Or_g8fpJo4RSAHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3" alt="Doctor 2">
+      <h3>Dr. Michael Roberts</h3>
+      <p>Gynecology Specialist</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Doctor Card 3 -->
+    <div class="doctor-card">
+      <img src="https://th.bing.com/th/id/OIP.MUEhGSHvlJrHinZMfogqjQHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Doctor 3">
+      <h3>Dr. Emily Brown</h3>
+      <p>Obstetrics Specialist</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Doctor Card 4 -->
+    <div class="doctor-card">
+      <img src="https://th.bing.com/th/id/OIP.LoqQ15EiLvHxNJVj_k8mXgHaHa?w=194&h=194&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Doctor 4">
+      <h3>Dr. John Davis</h3>
+      <p>Neonatology Specialist</p>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+
     <!--About End-->
     <div style="width: 100%; margin: 0 auto;padding: 10px;">
       <div class="row">
