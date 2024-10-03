@@ -3,11 +3,11 @@
 
   <head>
     <!--Meta Data-->
-    <%- include('partial/title.ejs'); %>  
+    <%- include('partial/title.ejs'); %> 
 
     <% if (data.NODE_ENV == 'production') { %>
       <!-- Production Stylesheets -->
-      <!-- <link rel="stylesheet" href="assets/production/css/home.min.css"> -->
+      <link rel="stylesheet" href="assets/production/css/about.min.css">
 
     <% }else { %>
       <!-- Development Stylesheets -->
@@ -18,21 +18,17 @@
       <link rel="stylesheet" href="assets/lib/css/spacing.css">
       <link rel="stylesheet" href="assets/lib/css/style.css">
       <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="assets/lib/css/owl.theme.default.min.css">
       <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css">
       <link rel="stylesheet" href="assets/lib/css/magnific-popup.css">
-      <link rel="stylesheet" href="assets/css/home.css">
       <link rel="stylesheet" href="assets/css/header.css">
       
     <% } %>
   </head>
 
   <body onLoad="typeWriter()">
-
     <!--Header-->
     <%- include('partial/header.ejs', {data: data }); %>
 
-    <!--About Start-->
     <div style="padding-inline: 4rem;" class="container-fluid bg-light vh-100 d-flex align-items-center justify-content-center ">
       <div class="row flex-column-reverse flex-lg-row align-items-center">
         <div class="col-12 col-lg-6 text-center text-lg-left">
@@ -52,13 +48,9 @@
         </div>
       </div>
     </div>
-    
-    
-    <!-- Bootstrap CSS CDN -->
-    
-    <!--About End-->
 
-    <!--Choose-Area Start-->
+
+
     <div class="choose-area pb_90">
       <div class="container">
         <div class="row">
@@ -123,112 +115,619 @@
         </div>
       </div>
     </div>
+
+    <div class="headline">
+      <h2>SPECIAL FEATURES</h2>
+      <h3>We offer some awesome features that will help you</h3>
+    </div>
+    <div class="section_our_solution">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="our_solution_category">
+            <div class="row solution_cards_box">
+              <!-- First row of cards -->
+              <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 1.4rem;" class="solution_card">
+                  <div class="hover_color_bubble"></div>
+                  <div class="text-center">
+                    <i style="font-size: x-large;" class="fas fa-hospital-alt"></i>
+                  </div>
+                  <div class="solu_title">
+                    <h3 style="text-align: center;">Planned Space Design</h3>
+                  </div>
+                  <div class="solu_description">
+                    <p>
+                      It optimizes layouts for functionality and aesthetics, enhancing workflow, comfort, and efficiency in various environments like healthcare, offices, and homes.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
     
-    <!--Choose-Area End-->
-<style>
-  /* Global Styles */
+              <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 1.4rem;" class="solution_card">
+                  <div class="hover_color_bubble"></div>
+                  <div class="text-center">
+                    <i style="font-size: x-large;" class="fas fa-procedures"></i>
+                  </div>
+                  <div class="solu_title">
+                    <h3 style="text-align: center;">Good Medical Facilities</h3>
+                  </div>
+                  <div class="solu_description">
+                    <p>
+                     It provide comprehensive healthcare services, advanced technology, skilled professionals, and a patient-centered approach for optimal outcomes.
+                    </p>
+               
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 1.4rem;" class="solution_card">
+                  <div class="hover_color_bubble"></div>
+                  <div class="text-center">
+                    <i style="font-size: x-large;" class="fas fa-ambulance"></i>
+                  </div>
+                  <div class="solu_title">
+                    <h3 style="text-align: center;">Best Ambulance Service</h3>
+                  </div>
+                  <div class="solu_description">
+                    <p>
+                     It ensures timely and reliable patient transport, equipped with trained medical staff and advanced equipment, prioritizing safety and comfort during emergencies.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Second row of cards -->
+              <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 1.4rem;" class="solution_card">
+                  <div class="hover_color_bubble"></div>
+                  <div class="text-center">
+                    <i style="font-size: x-large;" class="fas fa-laptop-medical"></i>
+                  </div>
+                  <div class="solu_title">
+                    <h3 style="text-align: center;">Computerized Platform</h3>
+                  </div>
+                  <div class="solu_description">
+                    <p>
+                     It streamlines processes through digital systems, data management, and user interaction across various applications, fostering better communication.
+                    </p>
+                    
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 1.4rem;" class="solution_card">
+                  <div class="hover_color_bubble"></div>
+                  <div class="text-center">
+                    <i style="font-size: x-large;" class="fas fa-stethoscope"></i>
+                  </div>
+                  <div class="solu_title">
+                    <h3 style="text-align: center;">Reduced Supervision</h3>
+                  </div>
+                  <div class="solu_description">
+                    <p>
+                     It promotes autonomy among employees, allowing them to take initiative and make decisions independently, ultimately fostering a more empowered and efficient work environment.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-4 col-md-4">
+                <div style="padding-top: 1.4rem;" class="solution_card">
+                  <div class="hover_color_bubble"></div>
+                  <div class="text-center">
+                    <i style="font-size: x-large;" class="fas fa-robot"></i>
+                  </div>
+                  <div class="solu_title">
+                    <h3 style="text-align: center;">Modern Technology</h3>
+                  </div>
+                  <div class="solu_description">
+                    <p>
+                     It enhances efficiency and connectivity, enabling faster communication, improved data management, and innovative solutions across various sectors, driving growth and productivity.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Third row of cards -->
+             
+    
+              
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="services-area pt_90 pb_90">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="headline">
+              <h2>OUR SERVICES</h2>
+              <h3>We are always here to serve you some awesome services</h3>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add the cards from the card template here -->
+        <div class="row">
+          <ul class="cards">
+            <li>
+              <a href="#" class="card">
+                <img src="https://images.pexels.com/photos/64242/baby-hand-dad-64242.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Newborn Care" height="200px"/>
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                      <h3 class="card__title">Newborn Care</h3>
+                      <!-- <span class="card__status">Lorem ipsum dolor sit amet, eu nostrum copiosae argumentum has.</span> -->
+                    </div>
+                  </div>
+                  <p class="card__description">Specialized care for newborns in their first days of life.</p>
+                </div>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="card">
+                <img src="https://images.pexels.com/photos/3845294/pexels-photo-3845294.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Mother Care" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                      <h3 class="card__title">Mother Care</h3>
+                      <!-- <span class="card__status">Lorem ipsum dolor sit amet, an labores explicari qui.</span> -->
+                    </div>
+                  </div>
+                  <p class="card__description">Comprehensive care for new mothers to ensure health and well-being.</p>
+                </div>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="card">
+                <img src="https://images.pexels.com/photos/4769130/pexels-photo-4769130.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Critical Treatment" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                      <h3 class="card__title">Critical Treatment</h3>
+                      <!-- <span class="card__status">Emergency care for critical conditions.</span> -->
+                    </div>
+                  </div>
+                  <p class="card__description">Providing urgent and specialized treatment for severe medical conditions.</p>
+                </div>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="card">
+                <img src="https://images.pexels.com/photos/7722671/pexels-photo-7722671.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Modern Laboratory" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                      <h3 class="card__title">Modern Laboratory</h3>
+                      <!-- <span class="card__status">Advanced testing and diagnostic services.</span> -->
+                    </div>
+                  </div>
+                  <p class="card__description">State-of-the-art lab for accurate medical tests and diagnosis.</p>
+                </div>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="card">
+                <img src="https://images.pexels.com/photos/4269491/pexels-photo-4269491.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="All Major Tests" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                      <h3 class="card__title">All Major Tests</h3>
+                      <!-- <span class="card__status">Comprehensive range of medical tests.</span> -->
+                    </div>
+                  </div>
+                  <p class="card__description">Providing a variety of tests for accurate medical assessment.</p>
+                </div>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="card">
+                <img src="https://images.pexels.com/photos/6129243/pexels-photo-6129243.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Dental Care" />
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <div class="card__header-text">
+                      <h3 class="card__title">Specialist Consultations</h3>
+                      <!-- <span class="card__status">Complete oral care services.</span> -->
+                    </div>
+                  </div>
+                  <p class="card__description">Access to pediatric cardiologists, neurologists, and other specialists</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-.lead {
-  color: #aaa;
+    <style>
+      /* Global Styles */
+
+      :root {
+  --surface-color: #fff;
+  --primary-color: #ff6f61; /* Enhancing with a primary color */
+  --secondary-color: #d7bdca; 
+  --curve: 40;
+  --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-.wrapper {
-  margin: 10vh 0;
+* {
+  box-sizing: border-box;
 }
 
-/* Card Styles */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+ 
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
+  gap: 2rem; /* Space between cards */
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+
 .card {
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-  min-height: 450px;
-  overflow: hidden;
-  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-@media (max-width: 768px) {
-  .card {
-    min-height: 350px;
-  }
-}
-
-@media (max-width: 420px) {
-  .card {
-    min-height: 300px;
-  }
-}
-
-/* Background & Hover Effect */
-.card-has-bg {
-  background-size: 120%;
-  background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 10px 20px var(--shadow-color); /* Adding shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-has-bg:before {
-  content: '';
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .card__image {
+  transform: scale(1.05);
+}
+
+.card__overlay {
   position: absolute;
-  top: 0;
-  right: 0;
   bottom: 0;
   left: 0;
-  background: inherit;
-  filter: grayscale(100%);
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: .3s ease-in-out;
 }
 
-.card-has-bg:hover {
-  transform: scale(0.98);
-  box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
-  background-size: 130%;
+.card:hover .card__overlay {
+  transform: translateY(0);
 }
 
-.card-has-bg:hover .card-img-overlay {
-  background: linear-gradient(0deg, rgba(255, 186, 33, 0.5) 0%, #21fbff 100%);
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .3s ease-in-out;
 }
 
-.card-img-overlay {
-  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
-  background: linear-gradient(0deg, rgba(255, 186, 33, 0.38) 0%, #21fbff 100%);
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
 }
 
-/* Card Body */
-.card-body {
-  transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
 }
 
-.card-has-bg:hover .card-body {
-  margin-top: 30px;
+.card:hover .card__header {
+  transform: translateY(0);
 }
 
-.card-title {
-  font-weight: 800;
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color); /* Make the thumbnail stand out */
 }
 
-.card-meta {
-  color: rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
+.card__title {
+  font-size: 1.2em;
+  margin: 0 0 .3em;
+  color: #6b6bff; /* Better visibility with a bright color */
+  font-weight: bold;
 }
 
-/* Footer */
-.card-footer {
-  background: none;
-  border-top: none;
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: .9em;
+  color: var(--secondary-color);
 }
 
-.media img {
-  border: solid 3px rgba(255, 255, 255, 0.3);
+.card__status {
+  font-size: .8em;
+  color: var(--secondary-color);
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: var(--secondary-color);
+  font-family: 'Noto Sans JP', sans-serif;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  transition: color 0.3s ease;
+}
+
+.card:hover .card__description {
+  color: #333; /* Darker color on hover for better readability */
 }
 
 
-</style>
+      .services-area {
+        padding: 90px 0;
+        background-color: #f9f9f9;
+      }
+  
+      .headline {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+  
+      .headline h2 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333;
+      }
+  
+      .headline h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #666;
+      }
+  
+      .services-item {
+        background-color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+  
+      .services-item:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+  
+      .services-item a {
+        text-decoration: none;
+      }
+  
+      .services-photo {
+        height: 220px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        transition: all 0.4s ease;
+      }
+  
+      .services-photo::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+      }
+  
+      .services-item:hover .services-photo::before {
+        opacity: 1;
+      }
+  
+      .services-text {
+        padding: 20px;
+        text-align: center;
+      }
+  
+      .services-text h3 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+        color: #212121;
+      }
+  
+      .services-text p {
+        font-size: 14px;
+        color: #777;
+        margin-bottom: 15px;
+      }
+  
+      .button-bn a {
+        display: inline-block;
+        font-size: 14px;
+        padding: 10px 20px;
+        color: #fff;
+        background: linear-gradient(45deg, #309df0, #42c3ca);
+        border-radius: 25px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+      }
+  
+      .button-bn a:hover {
+        background-color: #fff;
+        color: #309df0;
+        border: 1px solid #309df0;
+      }
+  
+      .services-item:hover .services-photo {
+        filter: brightness(0.7);
+      }
+  
+      @media screen and (min-width: 320px) {
+        .services-item {
+          margin: 0 0 30px 0;
+        }
+      }
+  
+      @media only screen and (min-width: 768px) {
+        .services-item {
+          margin: 0 15px 30px;
+        }
+      }
+  
+      @media only screen and (min-width: 1024px) {
+        .services-area .row {
+          justify-content: center;
+        }
+      }
+  
+    
+    
+    .lead {
+      color: #aaa;
+    }
+    
+    .wrapper {
+      margin: 10vh 0;
+    }
+    
+    /* Card Styles */
+    .card {
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+      min-height: 450px;
+      overflow: hidden;
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    @media (max-width: 768px) {
+      .card {
+        min-height: 350px;
+      }
+    }
+    
+    @media (max-width: 420px) {
+      .card {
+        min-height: 300px;
+      }
+    }
+    
+    /* Background & Hover Effect */
+    .card-has-bg {
+      background-size: 120%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: relative;
+    }
+    
+    .card-has-bg:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      filter: grayscale(100%);
+    }
+    
+    .card-has-bg:hover {
+      transform: scale(0.98);
+      box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+      background-size: 130%;
+    }
+    
+    .card-has-bg:hover .card-img-overlay {
+      background: linear-gradient(0deg, rgba(255, 186, 33, 0.5) 0%, #21fbff 100%);
+    }
+    
+    .card-img-overlay {
+      transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+      background: linear-gradient(0deg, rgba(255, 186, 33, 0.38) 0%, #21fbff 100%);
+    }
+    
+    /* Card Body */
+    .card-body {
+      transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+    
+    .card-has-bg:hover .card-body {
+      margin-top: 30px;
+    }
+    
+    .card-title {
+      font-weight: 800;
+    }
+    
+    .card-meta {
+      color: rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    
+    /* Footer */
+    .card-footer {
+      background: none;
+      border-top: none;
+    }
+    
+    .media img {
+      border: solid 3px rgba(255, 255, 255, 0.3);
+    }
 
-<style>
-  .section_our_solution .row {
+    .section_our_solution .row {
     align-items: center;
   }
 
@@ -375,729 +874,229 @@
       margin: 0 auto;
     }
   }
-
-</style>
-
-<div class="headline">
-  <h2>SPECIAL FEATURES</h2>
-  <h3>We offer some awesome features that will help you</h3>
-</div>
-<div class="section_our_solution">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12">
-      <div class="our_solution_category">
-        <div class="row solution_cards_box">
-          <!-- First row of cards -->
-          <div class="col-lg-4 col-md-4">
-            <div style="padding-top: 1.4rem;" class="solution_card">
-              <div class="hover_color_bubble"></div>
-              <div class="text-center">
-                <i style="font-size: x-large;" class="fas fa-hospital-alt"></i>
-              </div>
-              <div class="solu_title">
-                <h3 style="text-align: center;">Planned Space Design</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                  It optimizes layouts for functionality and aesthetics, enhancing workflow, comfort, and efficiency in various environments like healthcare, offices, and homes.
-                </p>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div style="padding-top: 1.4rem;" class="solution_card">
-              <div class="hover_color_bubble"></div>
-              <div class="text-center">
-                <i style="font-size: x-large;" class="fas fa-procedures"></i>
-              </div>
-              <div class="solu_title">
-                <h3 style="text-align: center;">Good Medical Facilities</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                 It provide comprehensive healthcare services, advanced technology, skilled professionals, and a patient-centered approach for optimal outcomes.
-                </p>
-           
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div style="padding-top: 1.4rem;" class="solution_card">
-              <div class="hover_color_bubble"></div>
-              <div class="text-center">
-                <i style="font-size: x-large;" class="fas fa-ambulance"></i>
-              </div>
-              <div class="solu_title">
-                <h3 style="text-align: center;">Best Ambulance Service</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                 It ensures timely and reliable patient transport, equipped with trained medical staff and advanced equipment, prioritizing safety and comfort during emergencies.
-                </p>
-                
-              </div>
-            </div>
-          </div>
-
-          <!-- Second row of cards -->
-          <div class="col-lg-4 col-md-4">
-            <div style="padding-top: 1.4rem;" class="solution_card">
-              <div class="hover_color_bubble"></div>
-              <div class="text-center">
-                <i style="font-size: x-large;" class="fas fa-laptop-medical"></i>
-              </div>
-              <div class="solu_title">
-                <h3 style="text-align: center;">Computerized Platform</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                 It streamlines processes through digital systems, data management, and user interaction across various applications, fostering better communication.
-                </p>
-                
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div style="padding-top: 1.4rem;" class="solution_card">
-              <div class="hover_color_bubble"></div>
-              <div class="text-center">
-                <i style="font-size: x-large;" class="fas fa-stethoscope"></i>
-              </div>
-              <div class="solu_title">
-                <h3 style="text-align: center;">Reduced Supervision</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                 It promotes autonomy among employees, allowing them to take initiative and make decisions independently, ultimately fostering a more empowered and efficient work environment.
-                </p>
-               
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4">
-            <div style="padding-top: 1.4rem;" class="solution_card">
-              <div class="hover_color_bubble"></div>
-              <div class="text-center">
-                <i style="font-size: x-large;" class="fas fa-robot"></i>
-              </div>
-              <div class="solu_title">
-                <h3 style="text-align: center;">Modern Technology</h3>
-              </div>
-              <div class="solu_description">
-                <p>
-                 It enhances efficiency and connectivity, enabling faster communication, improved data management, and innovative solutions across various sectors, driving growth and productivity.
-                </p>
-               
-              </div>
-            </div>
-          </div>
-
-          <!-- Third row of cards -->
-         
-
-          
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-    <!--Feature-Area End-->
-
-
-    <!--Services Start-->
-    <style>
-      /* Start of integrated CSS */
-  
-      .services-area {
-        padding: 90px 0;
-        background-color: #f9f9f9;
-      }
-  
-      .headline {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-  
-      .headline h2 {
-        font-size: 2.5rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: #333;
-      }
-  
-      .headline h3 {
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #666;
-      }
-  
-      .services-item {
-        background-color: #fff;
-        border-radius: 15px;
-        overflow: hidden;
-        margin-bottom: 30px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-  
-      .services-item:hover {
-        transform: scale(1.05);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      }
-  
-      .services-item a {
-        text-decoration: none;
-      }
-  
-      .services-photo {
-        height: 220px;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        transition: all 0.4s ease;
-      }
-  
-      .services-photo::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.4);
-        opacity: 0;
-        transition: opacity 0.4s ease;
-      }
-  
-      .services-item:hover .services-photo::before {
-        opacity: 1;
-      }
-  
-      .services-text {
-        padding: 20px;
-        text-align: center;
-      }
-  
-      .services-text h3 {
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-bottom: 15px;
-        color: #212121;
-      }
-  
-      .services-text p {
-        font-size: 14px;
-        color: #777;
-        margin-bottom: 15px;
-      }
-  
-      .button-bn a {
-        display: inline-block;
-        font-size: 14px;
-        padding: 10px 20px;
-        color: #fff;
-        background: linear-gradient(45deg, #309df0, #42c3ca);
-        border-radius: 25px;
-        text-transform: uppercase;
-        transition: all 0.3s ease;
-      }
-  
-      .button-bn a:hover {
-        background-color: #fff;
-        color: #309df0;
-        border: 1px solid #309df0;
-      }
-  
-      .services-item:hover .services-photo {
-        filter: brightness(0.7);
-      }
-  
-      @media screen and (min-width: 320px) {
-        .services-item {
-          margin: 0 0 30px 0;
-        }
-      }
-  
-      @media only screen and (min-width: 768px) {
-        .services-item {
-          margin: 0 15px 30px;
-        }
-      }
-  
-      @media only screen and (min-width: 1024px) {
-        .services-area .row {
-          justify-content: center;
-        }
-      }
-  
-    </style>
- 
-  
- <div class="services-area pt_90 pb_90">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="headline">
-          <h2>OUR SERVICES</h2>
-          <h3>We are always here to serve you some awesome services</h3>
-        </div>
-      </div>
-    </div>
     
-    <!-- Add the cards from the card template here -->
-    <div class="row">
-      <ul class="cards">
-        <li>
-          <a href="#" class="card">
-            <img src="https://images.pexels.com/photos/64242/baby-hand-dad-64242.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Newborn Care" height="200px"/>
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <div class="card__header-text">
-                  <h3 class="card__title">Newborn Care</h3>
-                  <!-- <span class="card__status">Lorem ipsum dolor sit amet, eu nostrum copiosae argumentum has.</span> -->
-                </div>
-              </div>
-              <p class="card__description">Specialized care for newborns in their first days of life.</p>
-            </div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#" class="card">
-            <img src="https://images.pexels.com/photos/3845294/pexels-photo-3845294.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Mother Care" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <div class="card__header-text">
-                  <h3 class="card__title">Mother Care</h3>
-                  <!-- <span class="card__status">Lorem ipsum dolor sit amet, an labores explicari qui.</span> -->
-                </div>
-              </div>
-              <p class="card__description">Comprehensive care for new mothers to ensure health and well-being.</p>
-            </div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#" class="card">
-            <img src="https://images.pexels.com/photos/4769130/pexels-photo-4769130.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Critical Treatment" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <div class="card__header-text">
-                  <h3 class="card__title">Critical Treatment</h3>
-                  <!-- <span class="card__status">Emergency care for critical conditions.</span> -->
-                </div>
-              </div>
-              <p class="card__description">Providing urgent and specialized treatment for severe medical conditions.</p>
-            </div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#" class="card">
-            <img src="https://images.pexels.com/photos/7722671/pexels-photo-7722671.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Modern Laboratory" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <div class="card__header-text">
-                  <h3 class="card__title">Modern Laboratory</h3>
-                  <!-- <span class="card__status">Advanced testing and diagnostic services.</span> -->
-                </div>
-              </div>
-              <p class="card__description">State-of-the-art lab for accurate medical tests and diagnosis.</p>
-            </div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#" class="card">
-            <img src="https://images.pexels.com/photos/4269491/pexels-photo-4269491.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="All Major Tests" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <div class="card__header-text">
-                  <h3 class="card__title">All Major Tests</h3>
-                  <!-- <span class="card__status">Comprehensive range of medical tests.</span> -->
-                </div>
-              </div>
-              <p class="card__description">Providing a variety of tests for accurate medical assessment.</p>
-            </div>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#" class="card">
-            <img src="https://images.pexels.com/photos/6129243/pexels-photo-6129243.jpeg?auto=compress&cs=tinysrgb&w=600" class="card__image" alt="Dental Care" />
-            <div class="card__overlay">
-              <div class="card__header">
-                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-                <div class="card__header-text">
-                  <h3 class="card__title">Specialist Consultations</h3>
-                  <!-- <span class="card__status">Complete oral care services.</span> -->
-                </div>
-              </div>
-              <p class="card__description">Access to pediatric cardiologists, neurologists, and other specialists</p>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+    
+    </style>
+
+
 <style>
-  :root {
-  --surface-color: #fff;
-  --primary-color: #ff6f61; /* Enhancing with a primary color */
-  --secondary-color: #d7bdca; 
-  --curve: 40;
-  --shadow-color: rgba(0, 0, 0, 0.2);
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #fef8f8;
- 
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Ensures 3 cards per row */
-  gap: 2rem; /* Space between cards */
-  margin: 4rem 5vw;
-  padding: 0;
-  list-style-type: none;
-}
-
-
-.card {
-  position: relative;
-  display: block;
-  height: 100%;
-  border-radius: calc(var(--curve) * 1px);
-  overflow: hidden;
-  text-decoration: none;
-  box-shadow: 0 10px 20px var(--shadow-color); /* Adding shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-}
-
-.card__image {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease;
-}
-
-.card:hover .card__image {
-  transform: scale(1.05);
-}
-
-.card__overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  border-radius: calc(var(--curve) * 1px);
-  background-color: var(--surface-color);
-  transform: translateY(100%);
-  transition: .3s ease-in-out;
-}
-
-.card:hover .card__overlay {
-  transform: translateY(0);
-}
-
-.card__header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 2em;
-  padding: 2em;
-  border-radius: calc(var(--curve) * 1px) 0 0 0;
-  background-color: var(--surface-color);
-  transform: translateY(-100%);
-  transition: .3s ease-in-out;
-}
-
-.card__arc {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  bottom: 100%;
-  right: 0;
-  z-index: 1;
-}
-
-.card__arc path {
-  fill: var(--surface-color);
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}
-
-.card:hover .card__header {
-  transform: translateY(0);
-}
-
-.card__thumb {
-  flex-shrink: 0;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid var(--primary-color); /* Make the thumbnail stand out */
-}
-
-.card__title {
-  font-size: 1.2em;
-  margin: 0 0 .3em;
-  color: #6b6bff; /* Better visibility with a bright color */
-  font-weight: bold;
-}
-
-.card__tagline {
-  display: block;
-  margin: 1em 0;
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: .9em;
-  color: var(--secondary-color);
-}
-
-.card__status {
-  font-size: .8em;
-  color: var(--secondary-color);
-}
-
-.card__description {
-  padding: 0 2em 2em;
-  margin: 0;
-  color: var(--secondary-color);
-  font-family: 'Noto Sans JP', sans-serif;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  transition: color 0.3s ease;
-}
-
-.card:hover .card__description {
-  color: #333; /* Darker color on hover for better readability */
-}
-
+  
 </style>
-    <!--Services End-->
 
-    <!-- TESTIMONIALS Start-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!--Footer-->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            font-family: "Open Sans", sans-serif;
+        /* Container for testimonials */
+        .testimonial-carousel-container {
+            margin-bottom: 3rem;
+            background-color: #f7f9fa;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-        h2 {
+
+        /* Carousel header */
+        .testimonial-carousel-container h2 {
             color: #333;
             text-align: center;
             text-transform: uppercase;
             font-family: "Roboto", sans-serif;
             font-weight: bold;
+            margin-bottom: 30px;
+            letter-spacing: 1.5px;
             position: relative;
-            margin: 30px 0 60px;
         }
-        h2::after {
+
+        .testimonial-carousel-container h2::after {
             content: "";
-            width: 100px;
-            position: absolute;
-            margin: 0 auto;
+            width: 80px;
             height: 3px;
-            background: #65d7e3;
-            left: 0;
-            right: 0;
-            bottom: -10px;
+            background: linear-gradient(to right, #65d7e3, #69c0ff);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -15px;
         }
-        .col-center {
-            margin: 0 auto;
-            float: none !important;
+
+        /* Carousel styling */
+        .testimonial-carousel {
+            padding: 0 40px;
         }
-        .carousel {
-            padding: 0 70px;
-        }
-        .carousel .carousel-item {
-            color: #999;
-            font-size: 14px;
+
+        .testimonial-carousel .testimonial-carousel-item {
+            color: #444;
+            font-size: 15px;
             text-align: center;
             overflow: hidden;
-            min-height: 290px;
+            min-height: 320px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
         }
-        .carousel .carousel-item .img-box {
-            width: 135px;
-            height: 135px;
-            margin: 0 auto;
+
+        .testimonial-carousel .testimonial-carousel-item:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-carousel .img-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
             padding: 5px;
-            border: 1px solid #ddd;
+            border: 3px solid #65d7e3;
             border-radius: 50%;
+            overflow: hidden;
         }
-        .carousel .img-box img {
+
+        .testimonial-carousel .img-box img {
             width: 100%;
             height: 100%;
-            display: block;
+            object-fit: cover;
             border-radius: 50%;
         }
-        .carousel .testimonial {
-            padding: 30px 0 10px;
-        }
-        .carousel .overview {
+
+        .testimonial-carousel .testimonial {
             font-style: italic;
+            color: #666;
+            line-height: 1.6;
         }
-        .carousel .overview b {
+
+        .testimonial-carousel .overview {
+            font-weight: 600;
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .testimonial-carousel .overview b {
             text-transform: uppercase;
             color: #5bd0ee;
         }
-        .carousel-control-prev, .carousel-control-next {
-            width: 40px;
-            height: 40px;
-            margin-top: -20px;
+
+        .testimonial-carousel .testimonial-carousel-control-prev, 
+        .testimonial-carousel .testimonial-carousel-control-next {
+            width: 45px;
+            height: 45px;
+            background-color: #65d7e3;
+            border-radius: 50%;
             top: 50%;
-            background: none;
+            transform: translateY(-50%);
         }
-        .carousel-control-prev i, .carousel-control-next i {
-            font-size: 68px;
-            line-height: 42px;
+
+        .testimonial-carousel .testimonial-carousel-control-prev i, 
+        .testimonial-carousel .testimonial-carousel-control-next i {
+            font-size: 25px;
+            color: white;
             position: absolute;
             display: inline-block;
-            color: rgba(0, 0, 0, 0.8);
-            text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+            top: 50%;
+            transform: translateY(-50%);
         }
-        .carousel-indicators {
-            bottom: -40px;
+
+        .testimonial-carousel .testimonial-carousel-indicators {
+            bottom: -50px;
         }
-        .carousel-indicators li, .carousel-indicators li.active {
+
+        .testimonial-carousel .testimonial-carousel-indicators li, 
+        .testimonial-carousel .testimonial-carousel-indicators li.active {
             width: 12px;
             height: 12px;
-            margin: 1px 3px;
+            margin: 1px 5px;
             border-radius: 50%;
             border: none;
         }
-        .carousel-indicators li {
-            background: #999;
+
+        .testimonial-carousel .testimonial-carousel-indicators li {
+            background: #ddd;
             border-color: transparent;
-            box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
         }
-        .carousel-indicators li.active {
-            background: #555;        
-            box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+
+        .testimonial-carousel .testimonial-carousel-indicators li.active {
+            background: #5bd0ee;
         }
     </style>
-</head>
-<body>
-<div style="margin-bottom: 3rem;" class="container-xl">
+
+
+<div style="margin-top: 4rem;" class="testimonial-carousel-container container-xl">
     <div class="row">
         <div class="col-lg-8 mx-auto">
-            <h2>Testimonials</h2>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <h2>Client Testimonials</h2>
+            <div id="myTestimonialCarousel" class="testimonial-carousel slide" data-ride="carousel" data-interval="3000">
                 <!-- Carousel indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                </ol>   
+               
                 <!-- Wrapper for carousel items -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active testimonial-carousel-item">
                         <div class="img-box"><img src="assets/images/pat3.JPEG" alt="Lara Atkinson"></div>
-                        <p class="testimonial">"Dad buried in landslide! Jubilant throngs fill streets! Stunned father inconsolable - demands recount!"</p>
-                        <p class="overview"><b>Lara Atkinson</b></p>
+                        <p class="testimonial">"The professionalism, support, and dedication of this team is unmatched! My farm's productivity has skyrocketed thanks to their cutting-edge solutions."</p>
+                        <p class="overview"><b>Lara Atkinson</b> - Farmer & Innovator</p>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item testimonial-carousel-item">
                         <div class="img-box"><img src="assets/images/pat1.JPEG" alt="Emiliano Aquilani"></div>
-                        <p class="testimonial">"Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely."</p>
-                        <p class="overview"><b>Emiliano Aquilani</b></p>
+                        <p class="testimonial">"Incredible service! The team helped me access the latest drone technology for my farm, and the results have been transformative."</p>
+                        <p class="overview"><b>Emiliano Aquilani</b> - Sustainable Farming Advocate</p>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item testimonial-carousel-item">
                         <div class="img-box"><img src="https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Anna Iturbe"></div>
-                        <p class="testimonial">"The strength to change what I can, the inability to accept what I can't and the incapacity to tell the difference."</p>
-                        <p class="overview"><b>Anna Iturbe</b></p>
+                        <p class="testimonial">"I was blown away by how efficient and affordable the services were. My farm's efficiency has improved drastically."</p>
+                        <p class="overview"><b>Anna Iturbe</b> - Organic Farmer</p>
                     </div>
-                    <div class="carousel-item">
-                        <div class="img-box"><img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Testimonial 4"></div>
-                        <p class="testimonial">"Incredible experience! The service was beyond my expectations and I couldn’t be happier!"</p>
-                        <p class="overview"><b>John Doe</b></p>
+                    <div class="carousel-item testimonial-carousel-item">
+                        <div class="img-box"><img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="John Doe"></div>
+                        <p class="testimonial">"This has been a game-changer! From the technology to the support, everything has exceeded my expectations."</p>
+                        <p class="overview"><b>John Doe</b> - AgroTech Entrepreneur</p>
                     </div>
-                    <div class="carousel-item">
-                        <div class="img-box"><img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Testimonial 5"></div>
-                        <p class="testimonial">"A life-changing experience! I highly recommend their services to everyone."</p>
-                        <p class="overview"><b>Jane Smith</b></p>
+                    <div class="carousel-item testimonial-carousel-item">
+                        <div class="img-box"><img src="https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Jane Smith"></div>
+                        <p class="testimonial">"I highly recommend their services! Thanks to them, my farming operations are more efficient and profitable."</p>
+                        <p class="overview"><b>Jane Smith</b> - Precision Agriculture Expert</p>
                     </div>
                 </div>
                 <!-- Carousel controls -->
-                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                    <i class="fa fa-angle-right"></i>
+               
                 </a>
             </div>
         </div>
     </div>
 </div>
-    <!--TESTIMONIALS END-->
-    <div style="width: 100%; margin: 0 auto;padding: 10px;">
-      <div class="row">
-          <div class="col-md-11 mx-auto" style="background-image: url('https://wallpaperaccess.com/full/3718211.jpg'); background-size: cover; background-position: center; color: white; padding: 60px 20px; border-radius: 10px; text-align: center; position: relative; overflow: hidden; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
-              <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); border-radius: 10px;"></div>
-              <div style="position: relative; z-index: 1; padding-block: 5rem;">
-                  <h3 style="font-size: 2.5rem; margin-bottom: 20px; padding-inline: 1rem; color: white;">Now getting an appointment in any hospital has become online & easy!</h3>
-                  <div style="margin-top: 20px;">
-                      <a href="/patientregistration" style="background-color: #007bff; color: white; padding: 15px 30px; font-size: 1.2rem; border-radius: 25px; text-decoration: none; transition: background-color 0.3s, transform 0.3s;">
-                          Book Appointment Now <i class="fa fa-chevron-circle-right"></i>
-                      </a>
-                  </div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Initialize the carousel -->
+<script>
+  $(document).ready(function(){
+    $('#myTestimonialCarousel').carousel({
+      interval: 3000,  // Slide every 3 seconds
+      pause: 'hover'   // Pause on hover (optional)
+    });
+  });
+</script>
+<div style="width: 100%; margin: 0 auto;padding: 10px;"></div>
+  <div class="row">
+      <div class="col-md-11 mx-auto" style="background-image: url('https://wallpaperaccess.com/full/3718211.jpg'); background-size: cover; background-position: center; color: white; padding: 60px 20px; border-radius: 10px; text-align: center; position: relative; overflow: hidden; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);">
+          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); border-radius: 10px;"></div>
+          <div style="position: relative; z-index: 1; padding-block: 5rem;">
+              <h3 style="font-size: 2.5rem; margin-bottom: 20px; padding-inline: 1rem; color: white;">Now getting an appointment in any hospital has become online & easy!</h3>
+              <div style="margin-top: 20px;">
+                  <a href="/patientregistration" style="background-color: #007bff; color: white; padding: 15px 30px; font-size: 1.2rem; border-radius: 25px; text-decoration: none; transition: background-color 0.3s, transform 0.3s;">
+                      Book Appointment Now <i class="fa fa-chevron-circle-right"></i>
+                  </a>
               </div>
           </div>
       </div>
-    </div>
-    <!--Footer-->
-    <%- include('partial/footer.ejs'); %>
-    
-    <script>
-      var i = 0;
-      var txt = 'WELCOME TO MEDBUDDY';
-      var speed = 60;
-      function typeWriter() {
-        if (i < txt.length) {
-          document.getElementById("typeit").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-    </script>
+  </div>
+</div>
 
-    <!-- JavaScript -->
-    <script defer src="assets/lib/js/jquery-3.4.1.min.js"></script>
-    <script defer src="/assets/lib/js/popper.min.js"></script>
-    <script defer src="assets/lib/js/owl.carousel.min.js"></script>
-    <script defer src="assets/lib/js/bootstrap.bundle.js"></script>
-    <script defer src="assets/lib/js/all.min.js"></script>
-    <script defer src="assets/lib/js/select2.full.min.js"></script>
-    <script defer src="assets/js/home.js"></script>
-    
+     <!--Footer-->
+     <%- include('partial/footer.ejs'); %>
+
   </body>
+
 </html>
