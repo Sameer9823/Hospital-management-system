@@ -11,6 +11,9 @@
 .nav-link{
   color: #181717;
 }
+.dropdown-item{
+  color: #2ea8ff;
+}
 
 
 </style>
@@ -34,16 +37,17 @@
           aria-haspopup="true" aria-expanded="false">
           PATIENT
         </a>
+       
         <div class="dropdown-menu" aria-labelledby="navbarDropdownPatient">
           <% if (data.user==undefined ){ %>
-            <a class="dropdown-item" href="/patientregistration">REGISTRATION</a>
-            <a class="dropdown-item" href="/patientlogin">LOGIN</a>
+            <a style="color: #2ea8ff;" class="dropdown-item" href="/patientregistration">REGISTRATION</a>
+            <a style="color: #2ea8ff;" class="dropdown-item" href="/patientlogin">LOGIN</a>
             <% } else if(data.user.usertype=="patient" ) { %>
-              <a class="dropdown-item" href="/patienthome">PATIENT HOME</a>
-              <a class="dropdown-item" href="/logout">LOGOUT</a>
+              <a style="color: #2ea8ff;" class="dropdown-item" href="/patienthome">PATIENT HOME</a>
+              <a style="color: #2ea8ff;" class="dropdown-item" href="/logout">LOGOUT</a>
               <% } else { %>
-                <a class="dropdown-item" href="/patientregistration">REGISTRATION</a>
-                <a class="dropdown-item" href="/patientlogin">LOGIN</a>
+                <a style="color: #2ea8ff;" class="dropdown-item" href="/patientregistration">REGISTRATION</a>
+                <a style="color: #2ea8ff;" class="dropdown-item" href="/patientlogin">LOGIN</a>
                 <% } %>
         </div>
 
@@ -74,14 +78,14 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownAmbulance">
           <% if (data.user==undefined){ %>
-            <a class="dropdown-item" href="/ambulanceregistration">REGISTRATION </a>
-            <a class="dropdown-item" href="/ambulancelogin">LOGIN</a>
+            <a style="color: #2ea8ff;" class="dropdown-item" href="/ambulanceregistration">REGISTRATION </a>
+            <a style="color: #2ea8ff;" class="dropdown-item" href="/ambulancelogin">LOGIN</a>
             <% } else if(data.user.usertype=="AmbulanceProvider" ) { %>
-              <a class="dropdown-item" href="/ambulancehome">AMBULANCE SERVICE HOME</a>
-              <a class="dropdown-item" href="/logout">LOGOUT</a>
+              <a style="color: #2ea8ff;" class="dropdown-item" href="/ambulancehome">AMBULANCE SERVICE HOME</a>
+              <a style="color: #2ea8ff;" class="dropdown-item" href="/logout">LOGOUT</a>
               <% } else { %>
-                <a class="dropdown-item" href="/ambulanceregistration">REGISTRATION </a>
-                <a class="dropdown-item" href="/ambulancelogin">LOGIN</a>
+                <a style="color: #2ea8ff;" class="dropdown-item" href="/ambulanceregistration">REGISTRATION </a>
+                <a style="color: #2ea8ff;" class="dropdown-item" href="/ambulancelogin">LOGIN</a>
                 <% } %>
         </div>
 
@@ -93,14 +97,14 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownDoctor">
           <% if (data.user==undefined){ %>
-            <a class="dropdown-item" href="/doctorregistration">REGISTRATION</a>
-            <a class="dropdown-item" href="/doctorlogin">LOGIN</a>
+            <a style="color: #2ea8ff;" class="dropdown-item" href="/doctorregistration">REGISTRATION</a>
+            <a style="color: #2ea8ff;" class="dropdown-item" href="/doctorlogin">LOGIN</a>
             <% } else if(data.user.usertype=="doctor" ) { %>
-              <a class="dropdown-item" href="/doctorhome">DOCTOR HOME</a>
-              <a class="dropdown-item" href="/logout">LOGOUT</a>
+              <a style="color: #2ea8ff;" class="dropdown-item" href="/doctorhome">DOCTOR HOME</a>
+              <a style="color: #2ea8ff;" class="dropdown-item" href="/logout">LOGOUT</a>
               <% } else { %>
-                <a class="dropdown-item" href="/doctorregistration">REGISTRATION</a>
-                <a class="dropdown-item" href="/doctorlogin">LOGIN</a>
+                <a style="color: #2ea8ff;" class="dropdown-item" href="/doctorregistration">REGISTRATION</a>
+                <a style="color: #2ea8ff;" class="dropdown-item" href="/doctorlogin">LOGIN</a>
                 <% } %>
         </div>
 

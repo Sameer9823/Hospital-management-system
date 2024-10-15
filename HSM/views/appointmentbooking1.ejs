@@ -50,12 +50,10 @@
                           <div class="mb-3">
                             <p>Please select the disease</p>
                             <select id="disease" name="disease" required required>
-                              <option value="Ent">ENT Specialist</option>
-                              <option value="Skin">Skin Specialist</option>
-                              <option value="Dentist">Dentist</option>
-                              <option value="Heart">Heart Specialist</option>
-                              <option value="Lung">Lung Specialist</option>
-                              <option value="Neuro">Neuro Specialist</option>
+                              <option value="Ent">Pediatrics Specialist</option>
+                              <option value="Skin">Gynecology Specialist</option>
+                              <option value="Dentist">Obstetrics Specialist</option>
+                              <option value="Heart">Neonatology Specialist</option>
                             </select>
                           </div>
                         </div>
@@ -76,19 +74,7 @@
     <!--Footer-->
     <%- include('partial/footer.ejs'); %>
 
-    <script>
-      var i = 0;
-      var txt = 'WELCOME TO MEDBUDDY';
-      var speed = 60;
-
-      function typeWriter() {
-        if (i < txt.length) {
-          document.getElementById("typeit").innerHTML += txt.charAt(i);
-          i++;
-          setTimeout(typeWriter, speed);
-        }
-      }
-    </script>
+    
 
     <!-- JavaScript -->
     <script defer src="/assets/lib/js/jquery-3.4.1.min.js"></script>

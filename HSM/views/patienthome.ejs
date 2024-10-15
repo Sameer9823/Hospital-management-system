@@ -34,7 +34,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1>Welcome to our patient portal </h1>
+            <h1>Welcome to our patient dashboard </h1>
             <h3>Hi <%= data.user.name %>
             </h3>
 
@@ -42,21 +42,22 @@
               <div id="accordion">
                 <div class="faq-item card">
                   <div class="faq-header" id="heading1">
-                    <button class="faq-button " data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
+                    <button style="background-color: #49e4ff; color: black;" class="faq-button " data-toggle="collapse" data-target="#collapse1" aria-expanded="true"
                       aria-controls="collapse1"><i class="fa fa-caret-right"></i> Book An Appointment </button>
                   </div>
                   <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
                     <div class="faq-body">
                       <p>
                         <a href="/patienthome/bookappointment/<%= data.user._id%>"
-                          class="btn btn-success btn-large">Book an Appointment</a>
+                          class="btn btn-primary btn-large">Book an Appointment</a>
                       </p>
                     </div>
                   </div>
                 </div>
+              
                 <div class="faq-item card">
                   <div class="faq-header" id="heading2">
-                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse2"
+                    <button id="bt" style="background-color: #49e4ff; color: black;" class="faq-button collapsed" data-toggle="collapse" data-target="#collapse2"
                       aria-expanded="true" aria-controls="collapse2"><i class="fa fa-caret-right"></i>Book an
                       Ambulance</button>
                   </div>
@@ -83,7 +84,7 @@
                               minlength="10" autocomplete="off" required>
                           </div>
                           <div class="form-group col-12">
-                            <button type="submit" class="btn btn-success btn-large" name="form_ambulance">Book an
+                            <button style="background-color: #4973ff; color: #ffffff;" type="submit" class="btn btn-primary btn-large" name="form_ambulance">Book an
                               Ambulance</button>
                           </div>
                         </div>
@@ -94,7 +95,7 @@
                 </div>
                 <div class="faq-item card">
                   <div class="faq-header" id="heading3">
-                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse3"
+                    <button style="background-color: #49e4ff; color: black;" class="faq-button collapsed" data-toggle="collapse" data-target="#collapse3"
                       aria-expanded="true" aria-controls="collapse3"><i class="fa fa-caret-right"></i>Current
                       Appointment Details</button>
                   </div>
@@ -132,7 +133,7 @@
                 </div>
                 <div class="faq-item card">
                   <div class="faq-header" id="heading4">
-                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse4"
+                    <button style="background-color: #49e4ff; color: black;" class="faq-button collapsed" data-toggle="collapse" data-target="#collapse4"
                       aria-expanded="true" aria-controls="collapse3"><i class="fa fa-caret-right"></i>Current Ambulance
                       Details</button>
                   </div>
@@ -183,7 +184,7 @@
                 </div>
                 <div class="faq-item card">
                   <div class="faq-header" id="heading5">
-                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse5"
+                    <button style="background-color: #49e4ff; color: black;" class="faq-button collapsed" data-toggle="collapse" data-target="#collapse5"
                       aria-expanded="true" aria-controls="collapse4"><i class="fa fa-caret-right"></i>Past Appointment
                       Details</button>
                   </div>
@@ -235,7 +236,7 @@
                 </div>
                 <div class="faq-item card">
                   <div class="faq-header" id="heading6">
-                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse6"
+                    <button style="background-color: #49e4ff; color: black;" class="faq-button collapsed" data-toggle="collapse" data-target="#collapse6"
                       aria-expanded="true" aria-controls="collapse5"><i class="fa fa-caret-right"></i> Update
                       Credentials</button>
                   </div>
@@ -243,7 +244,7 @@
                   <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
                     <div class="faq-body">
                       <p>
-                        <a href="/patienthome/<%= data.user._id%>/edit" class="btn btn-success btn-large">Update
+                        <a  href="/patienthome/<%= data.user._id%>/edit" class="btn btn-primary btn-large">Update
                           Credentials</a>
                       </p>
                     </div>
