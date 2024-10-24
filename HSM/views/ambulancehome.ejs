@@ -67,7 +67,7 @@
                                         <b>Journey Status: </b>
                                         <%= item.JourneyStatus %> <br />
                                           <% if(item.BookingStatus=="Yet to be confirmed" ) {%>
-                                            <a href="/ambulancehome/<%= data.user._id %>/<%= item.BookingId %>/accept"
+                                            <a style="background-color: #4958ff;" href="/ambulancehome/<%= data.user._id %>/<%= item.BookingId %>/accept"
                                               class="btn btn-xs btn-confirm">Confirm Booking</a> <br />
                                             <% }else if (item.JourneyStatus=="Started" &&
                                               item.AmbulanceId.equals(data.user._id)) { %>
@@ -75,7 +75,7 @@
                                                 class="btn btn-xs btn-danger">End Journey</a> <br />
                                               <% }else if(item.BookingStatus=="Accepted" &&
                                                 item.AmbulanceId.equals(data.user._id)) { %>
-                                                <a href="/ambulancehome/<%= data.user._id %>/<%= item.BookingId %>/startjourney"
+                                                <a style="background-color: #4958ff;" href="/ambulancehome/<%= data.user._id %>/<%= item.BookingId %>/startjourney"
                                                   class="btn btn-xs btn-info">Start Journey</a> <br />
                                                 <% } %>
                             </div>

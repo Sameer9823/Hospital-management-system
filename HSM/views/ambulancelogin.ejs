@@ -32,29 +32,36 @@
 
     <div class="contact-area pt_60 pb_90">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-6">
+        <div class="row d-flex justify-content-between align-items-center">
+          <!-- Image Section -->
+          <div class="col-lg-6 col-md-6">
+            <div class="image-section">
+              <img src="https://wallpaperaccess.com/full/1551350.jpg" alt="Ambulance Image" style="width: 100%; border-radius: 10px; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);">
+            </div>
+          </div>
+    
+          <!-- Form Section -->
+          <div class="col-lg-6 col-md-6">
             <div class="contact-form headstyle user-login-tab pt_0">
               <ul class="nav nav-tabs mt_15" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="tab" href="#" role="tab">Ambulance Login</a>
                 </li>
               </ul>
+    
               <!-- Tab panes -->
               <div class="tab-content">
                 <div class="tab-pane active" id="ambulanceLogin" role="tabpanel">
                   <form action="/ambulancelogin" method="POST" accept-charset="utf-8">
                     <div class="form-row row mt_20">
                       <div class="form-group col-12">
-                        <input type="email" class="form-control" placeholder="Email Address" name="username"
-                          autocomplete="off" required>
+                        <input type="email" class="form-control" placeholder="Email Address" name="username" autocomplete="off" required>
                       </div>
                       <div class="form-group col-12">
-                        <input type="password" class="form-control" placeholder="Password" name="password"
-                          autocomplete="off" required>
+                        <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="off" required>
                       </div>
                       <div class="form-group col-12">
-                        <button type="submit" class="btn" name="ambulance_login">Login</button>
+                        <button style="background-color: rgb(21, 115, 223); color: white;" type="submit" class="btn btn-primary" name="ambulance_login">Login</button>
                       </div>
                     </div>
                   </form>
@@ -65,6 +72,7 @@
         </div>
       </div>
     </div>
+    
 
     <!--Footer-->
     <%- include('partial/footer.ejs'); %>
