@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <!--Meta Data-->
-    <%- include('partial/title.ejs'); %> 
-
-    <% if (data.NODE_ENV == 'production') { %>
-      <!-- Production Stylesheets -->
-      <link rel="stylesheet" href="assets/production/css/loginRegister.min.css">
+    <%- include('partial/title.ejs'); %> <% if (data.NODE_ENV == 'production') {
+    %>
+    <!-- Production Stylesheets -->
+    <link rel="stylesheet" href="assets/production/css/loginRegister.min.css" />
 
     <% }else { %>
-      <!-- Development Stylesheets -->
-      <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css">
-      <link rel="stylesheet" href="assets/lib/css/responsive.css">
-      <link rel="stylesheet" href="assets/lib/css/select2.min.css">
-      <link rel="stylesheet" href="assets/lib/css/spacing.css">
-      <link rel="stylesheet" href="assets/lib/css/style.css">
-      <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css">
-      <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css">
-      <link rel="stylesheet" href="assets/lib/css/magnific-popup.css">
-      <link rel="stylesheet" href="assets/css/header.css">
-      <link rel="stylesheet" href="assets/css/form1.css">
+    <!-- Development Stylesheets -->
+    <link rel="stylesheet" href="assets/lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/lib/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/lib/css/responsive.css" />
+    <link rel="stylesheet" href="assets/lib/css/select2.min.css" />
+    <link rel="stylesheet" href="assets/lib/css/spacing.css" />
+    <link rel="stylesheet" href="assets/lib/css/style.css" />
+    <link rel="stylesheet" href="assets/lib/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/lib/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="assets/lib/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/form1.css" />
 
     <% } %>
   </head>
@@ -30,34 +28,75 @@
     <!--Header-->
     <%- include('partial/header.ejs', {data: data }); %>
 
-    <div class="container" style="padding-block: 4rem;">
+    <div class="container" style="padding-block: 4rem">
       <div class="row align-items-center">
         <div class="col-md-6 p-0">
-          <img src="https://wallpaperaccess.com/full/3718213.jpg" alt="Background Image" class="img-fluid w-70 h-100" style="object-fit: cover;">
+          <img
+            src="https://wallpaperaccess.com/full/3718213.jpg"
+            alt="Background Image"
+            class="img-fluid w-70 h-100"
+            style="object-fit: cover"
+          />
         </div>
-        
-        <div class="col-md-6 d-flex align-items-center justify-content-center bg-light">
-          <div class="contact-area p-4 rounded shadow-lg" style="max-width: 500px; width: 100%;">
+
+        <div
+          class="col-md-6 d-flex align-items-center justify-content-center bg-light"
+        >
+          <div
+            class="contact-area p-4 rounded shadow-lg"
+            style="max-width: 500px; width: 100%"
+          >
             <div class="contact-form headstyle user-login-tab">
               <ul class="nav nav-tabs mb-4" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#" role="tab">Doctor Login</a>
+                  <a
+                    class="nav-link active"
+                    data-toggle="tab"
+                    href="#"
+                    role="tab"
+                    >Doctor Login</a
+                  >
                 </li>
               </ul>
-    
+
               <!-- Tab panes -->
               <div class="tab-content">
                 <div class="tab-pane active" id="patientLogin" role="tabpanel">
-                  <form action="/doctorlogin" method="POST" accept-charset="utf-8">
+                  <form
+                    action="/doctorlogin"
+                    method="POST"
+                    accept-charset="utf-8"
+                  >
                     <div class="form-row row">
                       <div class="form-group col-12 mb-3">
-                        <input type="email" class="form-control" placeholder="Email Address" name="username" autocomplete="off" required>
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Email Address"
+                          name="username"
+                          autocomplete="off"
+                          required
+                        />
                       </div>
                       <div class="form-group col-12 mb-3">
-                        <input type="password" class="form-control" placeholder="Password" name="password" autocomplete="off" required>
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Password"
+                          name="password"
+                          autocomplete="off"
+                          required
+                        />
                       </div>
                       <div class="form-group col-12">
-                        <button style="background-color: #1988ff;" type="submit" class="btn btn-primary btn-block" name="form_login">Login</button>
+                        <button
+                          style="background-color: #1988ff"
+                          type="submit"
+                          class="btn btn-primary btn-block"
+                          name="form_login"
+                        >
+                          Login
+                        </button>
                       </div>
                     </div>
                   </form>
@@ -68,10 +107,7 @@
         </div>
       </div>
     </div>
-    
- 
-    
-    
+
     <!--Footer-->
     <%- include('partial/footer.ejs'); %>
 
@@ -82,7 +118,7 @@
 
       function typeWriter() {
         if (i < txt.length) {
-          document.getElementById("typeit").innerHTML += txt.charAt(i);
+          document.getElementById('typeit').innerHTML += txt.charAt(i);
           i++;
           setTimeout(typeWriter, speed);
         }
@@ -96,6 +132,5 @@
     <script defer src="assets/lib/js/all.min.js"></script>
     <script defer src="assets/lib/js/select2.full.min.js"></script>
     <script defer src="assets/js/about.js"></script>
-    
   </body>
 </html>
